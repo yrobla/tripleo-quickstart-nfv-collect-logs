@@ -77,6 +77,5 @@
     - name: fetch and gzip the console log
       shell: >
         curl {{ lookup('env', 'BUILD_URL') }}/consoleText | gzip > {{ artcl_collect_dir }}/console.txt.gz
-      when: artcl_rsync_logs|bool and "{{ lookup('env', 'BUILD_URL') }}" != ""
 
   delegate_to: localhost
