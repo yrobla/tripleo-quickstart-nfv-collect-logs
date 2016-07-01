@@ -1,0 +1,5 @@
+artcl_collect_list:
+  - /home/stack/tempest_console.log
+  - /home/stack/overcloud-validate.log
+  - /home/stack/tempest.html
+artcl_gzip_only: true
