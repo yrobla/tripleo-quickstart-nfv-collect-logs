@@ -1,0 +1,7 @@
+---
+- name: Collect logs and debug data
+  hosts: all:!localhost
+  serial: 1
+  gather_facts: no
+  tasks:
+    - include: ../tasks/main.yml
