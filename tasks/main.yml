@@ -74,8 +74,4 @@
         state: absent
       when: artcl_gzip_only|bool
 
-    - name: fetch and gzip the console log
-      shell: >
-        curl {{ lookup('env', 'BUILD_URL') }}/consoleText | gzip > {{ artcl_collect_dir }}/console.txt.gz
-
   delegate_to: localhost
